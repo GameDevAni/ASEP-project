@@ -1,0 +1,196 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Outfit';
+  background: linear-gradient(#ffdad5, #fff7f9);
+}
+
+.contact-container{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.case-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.title h1{
+  font-weight: 600;
+  color: #8f4597;
+  font-size: 40px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding-top: 60px;
+  padding-right: 10px;
+}
+
+.title hr{
+  border: none;
+  width: 360px;
+  height: 5px;
+  background-color: #8f4597;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.title h3{
+  font-weight: 500;
+  color: #8f4597;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.case-left-title h2{
+  font-weight: 600;
+  color: #8f4597;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.case-left-title hr{
+  border: none;
+  width: 134px;
+  height: 5px;
+  background-color: #8f4597;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.case-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus{
+  border: 2px solid #8f4597;
+}
+
+.contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+
+.location{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+.location::placeholder{
+  color: #a9a9a9;
+}
+.case-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #c035f7, #8c3af0);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.case-left button img{
+  height: 15px;
+}
+
+.case-right img{
+  width: 500px;
+}
+
+@media (max-width:800px){
+  .contact-inputs{
+    width: 80vw;
+  }
+  .case-right{
+    display: none;
+  }
+}
+
+.preview{
+  width: 90vw;
+  height: 120px;
+  max-width: 200px;
+  position: relative;
+}
+
+.preview img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input[type="file"]{
+  display: none;
+}
+
+label{
+  background: linear-gradient(270deg, #b515f4, #8c3af0);
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: .3rem;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+  margin-top: 2rem;
+  position: absolute;
+  margin-top: 18px;
+  
+}
+
+label:hover{
+  background-color: #c035f7;
+}
+
+label:active{
+  transform: scale(.95);
+}
+
+p{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #8400c2;
+  line-height: 0;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}

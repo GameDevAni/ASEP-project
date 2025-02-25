@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrayAid</title>
+  <link rel="stylesheet" href="homepage.css">
+  <script src="https://kit.fontawesome.com/b589d85c31.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="title">
+    <h1>Welcome To StrayAid</h1>
+    <hr>
+    <h3>! We Need More Like You !</h3>
+  </div>
+  <div class="contact-container">
+    <form id="contactform" method="POST" , class="case-left">
+      <div class="case-left-title">
+        <h2>Ask For Help!</h2>
+        <hr>
+      </div>
+      <input type="hidden" name="access_key" value="00528739-e7bf-4fa2-887c-2abafa3f1735">
+      <input type="text" name="phone" placeholder="Phone Number" class="contact-inputs" required>
+      <div class="upload_image">
+        <p><span class="file_name">Send us a photo and location to get them help! </span></p>
+        <div class="preview">
+          <img src="image-asset.jpeg" id="preview-image">
+        </div>
+        <div>
+          <input type="file" id="image-input" accept="image/*" name="attachment">
+          <label for="image-input">Upload File</label>
+        </div>
+      </div>
+      <input type="text" name="Location" placeholder="Your Current Location" class="location" required>
+      <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+      <button type="submit">Submit Help <img src="arrow_icon.png" alt=""></button>
+    </form>
+    <div class="case-right">
+      <img src="AAGNrYNikfk_1738593142191.png" alt="">
+    </div>
+  </div>
+  <script src="homepage.js"></script>
+</body>
+
+</html>

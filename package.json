@@ -1,0 +1,19 @@
+{
+  "name": "signup-signin-form-with-connection-to-firebase",
+  "version": "1.0.0",
+  "description": "SignUP-SignIn-Form-with-connection-to-FIrebase\r # check the video for how to work with the code [https://youtu.be/_Xczf06n6x0](https://www.youtube.com/channel/UCIaqBsk6GdL0GPIJ9ThOrMA)",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.0"
+  }
+}
