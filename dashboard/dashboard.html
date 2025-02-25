@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,35 @@
     <script src="https://cdn.jsdelivr.net/npm/pocketbase/dist/pocketbase.umd.js"></script>
 
 </head>
+
 <body>
     <div class="dashboard">
-        <h1>NGO Dashboard - StrayAid</h1>
+        <h1><u>NGO Dashboard - StrayAid</u></h1>
+        <div class="filter-container">
+            <label for="statusFilter"><strong>Filter by Status:</strong></label>
+            <select id="statusFilter">
+                <option value="All">All</option>
+                <option value="Pending">Pending</option>
+                <option value="Help on the way">Help on the way</option>
+                <option value="Rescued">Rescued</option>
+            </select>
+        </div>
+        
         <div class="submissions-container" id="submissions-container">
             <!-- Data from PocketBase will be inserted here -->
         </div>
+        <!-- Profile Section -->
+        <div class="profile-tab">
+            <img src="profile-icon-design-free-vector.jpg" alt="Profile Image" class="profile-img">
+        </div>
+        <!-- Image Preview Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close-btn">&times;</span>
+            <img class="modal-content" id="fullImage">
+        </div>
+
     </div>
     <script src="dashboard.js"></script>
 </body>
+
 </html>
