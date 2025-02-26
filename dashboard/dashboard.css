@@ -35,8 +35,9 @@ h1 {
   background: #081126;
   border-radius: 8px;
   padding: 15px;
-  box-shadow: 0 4px 8px rgba(113, 136, 250, 0.2);
+  box-shadow: 0 4px 8px rgba(113, 136, 250, 0.2); 
   transition: transform 0.3s;
+  text-align: left;
 }
 
 .submission-card:hover {
@@ -53,18 +54,24 @@ h1 {
 
 .submission-info {
   flex: 1;
+  text-align: left;
+  margin-left: 12px;
 }
 
 .submission-info h2 {
   font-size: 18px;
   color: #acc2fa;
   margin-bottom: 5px;
+  text-align: left; /* Force left alignment for all elements */
+  display: block;
 }
 
 .submission-info p {
   font-size: 14px;
   color: #dcdcdc;
   margin: 3px 0;
+  text-align: left; /* Force left alignment for all elements */
+  display: block;
 }
 
 /* Profile tab container */
