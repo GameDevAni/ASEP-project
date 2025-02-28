@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NGO Dashboard - StrayAid</title>
     <link rel="stylesheet" href="dashboard.css">
+    
+    <!-- PocketBase & TensorFlow.js -->
     <script src="https://cdn.jsdelivr.net/npm/pocketbase/dist/pocketbase.umd.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
 </head>
 
 <body>
     <div class="dashboard">
         <h1><u>NGO Dashboard - StrayAid</u></h1>
+
+        <!-- Filter Dropdown -->
         <div class="filter-container">
             <label for="statusFilter"><strong>Filter by Status:</strong></label>
             <select id="statusFilter">
@@ -21,22 +26,27 @@
                 <option value="Help on the way">Help on the way</option>
                 <option value="Rescued">Rescued</option>
             </select>
-        </div>
         
+                
+
+        <!-- Submissions Section -->
         <div class="submissions-container" id="submissions-container">
             <!-- Data from PocketBase will be inserted here -->
         </div>
+
         <!-- Profile Section -->
         <div class="profile-tab">
             <img src="profile-icon-design-free-vector.jpg" alt="Profile Image" class="profile-img">
         </div>
+
         <!-- Image Preview Modal -->
         <div id="imageModal" class="modal">
             <span class="close-btn">&times;</span>
             <img class="modal-content" id="fullImage">
         </div>
-
     </div>
+
+    <!-- Link to JavaScript File -->
     <script src="dashboard.js"></script>
 </body>
 

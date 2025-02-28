@@ -176,3 +176,8 @@ h1 {
   cursor: pointer;
 }
 
+.animal-type {
+  font-weight: bold;
+  color: #ff5733;
+}
+

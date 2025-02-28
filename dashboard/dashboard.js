@@ -79,6 +79,22 @@ function renderSubmissions(submissions) {
     });
 }
 
+document.querySelector(".close-btn").addEventListener("click", function() {
+    document.getElementById("imageModal").style.display = "none";
+});
+
+// Close Modal on Click
+document.querySelector(".close-btn").addEventListener("click", function() {
+    document.getElementById("imageModal").style.display = "none";
+});
+
+// Close Modal When Clicking Outside Image
+document.getElementById("imageModal").addEventListener("click", function(event) {
+    if (event.target === this) {
+        this.style.display = "none";
+    }
+});
+
 document.getElementById("statusFilter").addEventListener("change", function () {
     selectedStatus = this.value;
     fetchSubmissions(); // Refresh submissions with new filter
@@ -100,6 +116,7 @@ async function updateStatus(recordId, newStatus) {
         console.error("Error updating status:", error);
     }
 }
+
 
 
 
